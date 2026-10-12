@@ -9,4 +9,3 @@ api_key = config.get("GEMINI_API_KEY")
 
 api_key = os.getenv("GEMINI_API_KEY","")
 api_key = os.environ["GEMINI_API_KEY"] 
-
