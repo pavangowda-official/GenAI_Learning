@@ -70,8 +70,8 @@ print(f"\nSaved {kb.count()} chunks to {DB_PATH}")
 print("Restart the script and uncomment the reload block below to verify persistence.")
 
 # --- Reload block: uncomment on a second run to confirm data survived ---
-# client2 = chromadb.PersistentClient(path=DB_PATH)
-# col2    = client2.get_collection("knowledge_base")
-# print("Reloaded. Count:", col2.count())
-# results = col2.query(query_texts=["how to handle concurrency?"], n_results=2)
-# print(results["documents"])
+client2 = chromadb.PersistentClient(path=DB_PATH)
+col2    = client2.get_collection("knowledge_base")
+print("Reloaded. Count:", col2.count())
+results = col2.query(query_texts=["how to handle concurrency?"], n_results=2)
+print(results["documents"])
