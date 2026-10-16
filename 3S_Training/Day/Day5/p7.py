@@ -181,4 +181,4 @@ for q in [
     "What does the where= parameter do?"
 ]:
     # Print the current result to the terminal.
-    print(f"\nQ: {q}\nA: {rag_answer(q)}")
+    print(f"\nQ: {q}\nA: {rag_answer(q)}") 
